@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Alma Radio</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<style>
+ 
+  #lunaradio {
+    width:100%;
+    height: 100px; /* Ajusta la altura según sea necesario */
+    margin-top: 0px; /* Ajusta la distancia desde arriba según sea necesario */
+  }
+</style>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/lunaradio.js"></script>
+<script src="js/lunaradio.min.js"></script>
+</head>
+
+<body>
+<div id="lunaradio"></div>
+
+<script>
+  $(document).ready(function(){
+    $("#lunaradio").lunaradio({
+      userinterface: "small",
+      backgroundcolor: "rgba(14,16,21,0.5)",
+      fontcolor: "#093182",
+      hightlightcolor: "#FDFEFE",
+      fontname: "Saira Condensed",
+      googlefont: "Saira+Condensed:wght@100",
+      fontratio: "0.3",
+      radioname: "MyRadioGT OnLine",
+      scroll: "true",
+      coverimage: "",
+      usevisualizer: "real",
+      coverstyle: "animated",
+      visualizertype: "2",
+      multicolorvisualizer: "true",
+      color1: "#0748c2",
+      color2: "#0748c2",
+      color3: "#0748c2",
+      color4: "#0748c2",
+      itunestoken: "1000lIPN",
+      metadatatechnic: "stream-icy-meta",
+      ownmetadataurl: "",
+      streamurl: "https://stream3.mexiserver.com/proxy/myradiogt/stream",
+      streamtype: "icecast", 
+      icecastmountpoint: "/live",
+      radionomyid: "lbrbcbmxqreuv",
+      radionomyapikey: "lbrbcbmxqreuv",
+      radiozenoid: "lbrbcbmxqreuv",
+      radiojarid: "",
+      radiocoid: "",
+      shoutcastpath: "",
+      shoutcastid: "1",
+      streamsuffix: "",
+      metadatainterval: "20000",
+      volume: "100",
+      debug: "false",
+      usestreamcorsproxy: "false", 
+      corsproxy: "",
+      autoplay: "true",
+    });
+  });
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
+</body>
+</html>
